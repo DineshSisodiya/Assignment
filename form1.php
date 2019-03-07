@@ -76,16 +76,18 @@ if (isset($_POST['submit'])) {
 
   <div class="form-container">
   	<h3 class="title">Add Information</h3><hr>
-  	<?php
-  		if(!empty($response['message'])) {
-  			if($response['success']==true) {
-  				echo '<div class="success">'.$response['message'].'</div><hr>';
-  			} 
-  			else {
-  				echo '<div class="error">'.$response['message'].'</div><hr>';
-  			}
-  		}
-  	?>
+  	<div id="form-log">
+	  	<?php
+	  		if(!empty($response['message'])) {
+	  			if($response['success']==true) {
+	  				echo '<div class="success">'.$response['message'].'</div><hr>';
+	  			} 
+	  			else {
+	  				echo '<div class="error">'.$response['message'].'</div><hr>';
+	  			}
+	  		}
+	  	?>
+  	</div>
   	<form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="POST" accept="charset UTF-8">
 	    <div class="form-group">
 	      <label for="name">Full Name :</label>
