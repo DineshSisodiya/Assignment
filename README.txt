@@ -1,0 +1,1 @@
+Import the Database sql file " cartoq.sql " in phpmyadmin
