@@ -40,7 +40,7 @@ $(document).ready(function(){
 
 				if(data['success']==true) {
 					var data_length = data.list.length;
-					var select_list = '<select name="employee_names" size="'+data_length+'">';
+					var select_list = '<select name="employee_names" size="'+ (data_length+1)+'">';
 					for(var i=0;i<data_length;i++) {
 						select_list += '<option value='+data.list[i].email+' onclick="getInformation(\''+data.list[i].email+'\')">'+data.list[i].name+'</option>';
 					}
