@@ -63,5 +63,9 @@ $(document).ready(function(){
 			$("select[name='employee_names']").css('display', 'none');
 		}
 	});
+
+	setTimeout(function() {
+		$("#form-log").fadeOut();
+	}, 5000);
 	
 });
